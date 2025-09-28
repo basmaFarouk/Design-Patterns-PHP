@@ -1,0 +1,14 @@
+<?php
+namespace Command;
+
+class TurnTvOffCommand implements Command {
+    private Tv $tv;
+
+    public function __construct(Tv $tv) {
+        $this->tv = $tv;
+    }
+
+    public function execute(): void {
+        $this->tv->turnOff();
+    }
+}
