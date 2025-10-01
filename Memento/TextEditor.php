@@ -3,7 +3,7 @@
 namespace Memento;
 
 
-class TextEditor
+class TextEditor //Originator
 {
     private string $content;
 

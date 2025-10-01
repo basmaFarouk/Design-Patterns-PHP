@@ -1,8 +1,11 @@
 <?php
 
 namespace Memento;
+//Role in Memento: As the Caretaker, History stores and manages Memento objects (TextEditorState) 
+//without accessing or modifying their internal data. 
+//It provides undo/redo functionality by maintaining two stacks: one for previous states (undo) and one for states that can be redone.
 
-class History
+class History //Caretaker
 {
     private array $prevStates;
     private array $nextStates;

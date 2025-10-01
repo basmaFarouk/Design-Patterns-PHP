@@ -3,7 +3,7 @@
 namespace Memento;
 
 
-class TextEditorState
+class TextEditorState //Memento
 {
     private string $content;
 

@@ -4,6 +4,10 @@
 //The Memento pattern captures and externalizes an object’s internal state so that it can be restored later, 
 //without violating encapsulation. It’s about saving and restoring state for undo/redo functionality.
 
+//Originator: The object whose state needs to be saved and restored (in this case, TextEditor).
+//Memento: An object that stores the state of the Originator (in this case, TextEditorState).
+//Caretaker: The object responsible for managing the Memento objects, keeping track of the history of states (in this case, History).
+
 //Key Components:
 //Originator: The object whose state needs to be saved and restored. 
 //It creates a memento to store its state and can restore its state from a memento.
